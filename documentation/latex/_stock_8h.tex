@@ -1,0 +1,119 @@
+\hypertarget{_stock_8h}{}\doxysection{Stock.\+h File Reference}
+\label{_stock_8h}\index{Stock.h@{Stock.h}}
+
+
+Bibloteca com a estrutura do stock e respectivas funções.  
+
+
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_stock}{Stock}}
+\begin{DoxyCompactList}\small\item\em Armazena informações relativas ao stock. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_stock_8h_a2110564ee393e26dd0ab3a090313831b}\label{_stock_8h_a2110564ee393e26dd0ab3a090313831b}} 
+\#define {\bfseries MAX\+\_\+\+STOCK}~10000000
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_stock_8h_ac81be63e4a259be473459d5d9d9bd984}{criar\+Stock}} (\mbox{\hyperlink{struct_stock}{Stock}} $\ast$stock)
+\item 
+void \mbox{\hyperlink{_stock_8h_a037690687c6f4f440d52d8225a3f577e}{mostrar\+Stock}} (\mbox{\hyperlink{struct_stock}{Stock}} stock)
+\item 
+void \mbox{\hyperlink{_stock_8h_a39563904967edc79021779e8c04c5ef3}{editar\+Stock}} (\mbox{\hyperlink{struct_stock}{Stock}} $\ast$stock)
+\item 
+void \mbox{\hyperlink{_stock_8h_ae7244b4b5a1f9a286767af1de2e1d9a8}{carregar\+Stock}} (\mbox{\hyperlink{struct_stock}{Stock}} $\ast$stock, char $\ast$nome\+Ficheiro)
+\item 
+void \mbox{\hyperlink{_stock_8h_ad75a516b55ee3d8d224365225dc2ee6f}{guardar\+Stock}} (\mbox{\hyperlink{struct_stock}{Stock}} $\ast$stock, char $\ast$nome\+Ficheiro)
+\item 
+void \mbox{\hyperlink{_stock_8h_a659c518b52ff43bf556ea059b5524604}{media\+Stock}} (\mbox{\hyperlink{struct_stock}{Stock}} stock)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Bibloteca com a estrutura do stock e respectivas funções. 
+
+\begin{DoxyAuthor}{Author}
+Luis Oliveira \href{https://github.com/LuisCarlosOliveira}{\texttt{ https\+://github.\+com/\+Luis\+Carlos\+Oliveira}} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+on 7 de fevereiro de 2022, 11\+:35 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_stock_8h_ae7244b4b5a1f9a286767af1de2e1d9a8}\label{_stock_8h_ae7244b4b5a1f9a286767af1de2e1d9a8}} 
+\index{Stock.h@{Stock.h}!carregarStock@{carregarStock}}
+\index{carregarStock@{carregarStock}!Stock.h@{Stock.h}}
+\doxysubsubsection{\texorpdfstring{carregarStock()}{carregarStock()}}
+{\footnotesize\ttfamily void carregar\+Stock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_stock}{Stock}} $\ast$}]{stock,  }\item[{char $\ast$}]{nome\+Ficheiro }\end{DoxyParamCaption})}
+
+Lê dados de um ficheiro (caso exista) e preenche dados do stock 
+\begin{DoxyParams}{Parameters}
+{\em stock} & apontador para a estrutura \mbox{\hyperlink{struct_stock}{Stock}} que terá valores das variaveis lidas do ficheiro \\
+\hline
+{\em nome\+Ficheiro} & nome do ficheiro do qual \mbox{\hyperlink{struct_stock}{Stock}} será carregado \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_stock_8h_ac81be63e4a259be473459d5d9d9bd984}\label{_stock_8h_ac81be63e4a259be473459d5d9d9bd984}} 
+\index{Stock.h@{Stock.h}!criarStock@{criarStock}}
+\index{criarStock@{criarStock}!Stock.h@{Stock.h}}
+\doxysubsubsection{\texorpdfstring{criarStock()}{criarStock()}}
+{\footnotesize\ttfamily void criar\+Stock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_stock}{Stock}} $\ast$}]{stock }\end{DoxyParamCaption})}
+
+Lê stock da consola 
+\begin{DoxyParams}{Parameters}
+{\em stock} & apontador para a estrutura \mbox{\hyperlink{struct_stock}{Stock}} que permite armazenar todos os dados do stock \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_stock_8h_a39563904967edc79021779e8c04c5ef3}\label{_stock_8h_a39563904967edc79021779e8c04c5ef3}} 
+\index{Stock.h@{Stock.h}!editarStock@{editarStock}}
+\index{editarStock@{editarStock}!Stock.h@{Stock.h}}
+\doxysubsubsection{\texorpdfstring{editarStock()}{editarStock()}}
+{\footnotesize\ttfamily void editar\+Stock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_stock}{Stock}} $\ast$}]{stock }\end{DoxyParamCaption})}
+
+Editar stock 
+\begin{DoxyParams}{Parameters}
+{\em stock} & apontador para a estrutura \mbox{\hyperlink{struct_stock}{Stock}} que permite alterar todos os dados do stock \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_stock_8h_ad75a516b55ee3d8d224365225dc2ee6f}\label{_stock_8h_ad75a516b55ee3d8d224365225dc2ee6f}} 
+\index{Stock.h@{Stock.h}!guardarStock@{guardarStock}}
+\index{guardarStock@{guardarStock}!Stock.h@{Stock.h}}
+\doxysubsubsection{\texorpdfstring{guardarStock()}{guardarStock()}}
+{\footnotesize\ttfamily void guardar\+Stock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_stock}{Stock}} $\ast$}]{stock,  }\item[{char $\ast$}]{nome\+Ficheiro }\end{DoxyParamCaption})}
+
+Escreve o conteúdo do stock em ficheiro 
+\begin{DoxyParams}{Parameters}
+{\em stock} & apontador para a estrutura \mbox{\hyperlink{struct_stock}{Stock}} que será escrita em ficheiro \\
+\hline
+{\em nome\+Ficheiro} & nome do ficheiro no qual a estrutura será escrita \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_stock_8h_a659c518b52ff43bf556ea059b5524604}\label{_stock_8h_a659c518b52ff43bf556ea059b5524604}} 
+\index{Stock.h@{Stock.h}!mediaStock@{mediaStock}}
+\index{mediaStock@{mediaStock}!Stock.h@{Stock.h}}
+\doxysubsubsection{\texorpdfstring{mediaStock()}{mediaStock()}}
+{\footnotesize\ttfamily void media\+Stock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_stock}{Stock}}}]{stock }\end{DoxyParamCaption})}
+
+Listagem que permite saber, caso de falha de fornecimento, que pode se gastar sem prejudicar o stock minim 
+\begin{DoxyParams}{Parameters}
+{\em stock} & parâmetro que contém todos os dados referentes ao stock. \\
+\hline
+{\em nome\+Ficheiro} & nome do ficheiro no qual a estrutura será escrita \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_stock_8h_a037690687c6f4f440d52d8225a3f577e}\label{_stock_8h_a037690687c6f4f440d52d8225a3f577e}} 
+\index{Stock.h@{Stock.h}!mostrarStock@{mostrarStock}}
+\index{mostrarStock@{mostrarStock}!Stock.h@{Stock.h}}
+\doxysubsubsection{\texorpdfstring{mostrarStock()}{mostrarStock()}}
+{\footnotesize\ttfamily void mostrar\+Stock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_stock}{Stock}}}]{stock }\end{DoxyParamCaption})}
+
+Imprime na consola as informações do stock 
+\begin{DoxyParams}{Parameters}
+{\em stock} & parâmetro que contém todos os dados referentes ao stock. \\
+\hline
+\end{DoxyParams}

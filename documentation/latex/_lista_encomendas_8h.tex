@@ -1,0 +1,183 @@
+\hypertarget{_lista_encomendas_8h}{}\doxysection{Lista\+Encomendas.\+h File Reference}
+\label{_lista_encomendas_8h}\index{ListaEncomendas.h@{ListaEncomendas.h}}
+
+
+Biblioteca que contém a estrutura da lista de encomendas e respectivas funções para gestão da mesma.  
+
+
+{\ttfamily \#include \char`\"{}Encomenda.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_lista_encomendas}{Lista\+Encomendas}}
+\begin{DoxyCompactList}\small\item\em Armazena uma lista de encomendas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_lista_encomendas_8h_a8ca29d56e79dc1a062c7068a88b2ab08}\label{_lista_encomendas_8h_a8ca29d56e79dc1a062c7068a88b2ab08}} 
+\#define {\bfseries TAMANHO\+\_\+\+MAX}~5
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_lista_encomendas_8h_aa079c9e6ef1fda6a19d6bfdc8714a2b5}{expandir\+Memoria}} (\mbox{\hyperlink{struct_lista_encomendas}{Lista\+Encomendas}} $\ast$lista)
+\item 
+void \mbox{\hyperlink{_lista_encomendas_8h_a979a76933d236c0d3de80005eb4f6f3d}{libertar\+Memoria\+Encomendas}} (\mbox{\hyperlink{struct_lista_encomendas}{Lista\+Encomendas}} $\ast$lista)
+\item 
+void \mbox{\hyperlink{_lista_encomendas_8h_a96cdddbe14fd154ae81a0b291b8e5f03}{alocar\+Memoria}} (\mbox{\hyperlink{struct_lista_encomendas}{Lista\+Encomendas}} $\ast$lista)
+\item 
+int \mbox{\hyperlink{_lista_encomendas_8h_ab0bc01865c661dbe3e09065e38cdedfb}{adicionar\+Encomenda}} (\mbox{\hyperlink{struct_lista_encomendas}{Lista\+Encomendas}} $\ast$lista, \mbox{\hyperlink{struct_stock}{Stock}} $\ast$st, \mbox{\hyperlink{struct_necessidades}{Necessidades}} $\ast$nec, \mbox{\hyperlink{struct_minimo_enc}{Minimo\+Enc}} min\+Enc)
+\item 
+\mbox{\hyperlink{struct_encomenda}{Encomenda}} $\ast$ \mbox{\hyperlink{_lista_encomendas_8h_af7fe8d875e475c7d4b90d0383842563d}{obter\+Encomenda}} (\mbox{\hyperlink{struct_lista_encomendas}{Lista\+Encomendas}} $\ast$lista, int nr\+Enc)
+\item 
+void \mbox{\hyperlink{_lista_encomendas_8h_abc7e71bf5545e3dd471d55888703a2fa}{mostra\+Encomenda}} (\mbox{\hyperlink{struct_lista_encomendas}{Lista\+Encomendas}} $\ast$lista, int nr\+Enc)
+\item 
+void \mbox{\hyperlink{_lista_encomendas_8h_a08ac56d9c1f69bde23120a6936aad0bf}{listar\+Encomendas}} (\mbox{\hyperlink{struct_lista_encomendas}{Lista\+Encomendas}} $\ast$lista)
+\item 
+void \mbox{\hyperlink{_lista_encomendas_8h_aabfe16094703041e6bb5a43bb242bd8c}{guardar\+Nr\+Encomenda}} (\mbox{\hyperlink{struct_lista_encomendas}{Lista\+Encomendas}} $\ast$lista, int nr\+Enc)
+\item 
+void \mbox{\hyperlink{_lista_encomendas_8h_a07aecd50ce77b2148fcab8330969a249}{guardar\+Lista\+Encomendas}} (\mbox{\hyperlink{struct_lista_encomendas}{Lista\+Encomendas}} $\ast$lista)
+\item 
+void \mbox{\hyperlink{_lista_encomendas_8h_a86b47e4c4749091f9b60ffd5351a70b2}{media\+Encomendas}} (\mbox{\hyperlink{struct_lista_encomendas}{Lista\+Encomendas}} $\ast$lista)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Biblioteca que contém a estrutura da lista de encomendas e respectivas funções para gestão da mesma. 
+
+\begin{DoxyAuthor}{Author}
+\+: Luis Oliveira \href{https://github.com/LuisCarlosOliveira}{\texttt{ https\+://github.\+com/\+Luis\+Carlos\+Oliveira}}
+\end{DoxyAuthor}
+@date\+Created on 12 de fevereiro de 2022, 19\+:20 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_lista_encomendas_8h_ab0bc01865c661dbe3e09065e38cdedfb}\label{_lista_encomendas_8h_ab0bc01865c661dbe3e09065e38cdedfb}} 
+\index{ListaEncomendas.h@{ListaEncomendas.h}!adicionarEncomenda@{adicionarEncomenda}}
+\index{adicionarEncomenda@{adicionarEncomenda}!ListaEncomendas.h@{ListaEncomendas.h}}
+\doxysubsubsection{\texorpdfstring{adicionarEncomenda()}{adicionarEncomenda()}}
+{\footnotesize\ttfamily int adicionar\+Encomenda (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_encomendas}{Lista\+Encomendas}} $\ast$}]{lista,  }\item[{\mbox{\hyperlink{struct_stock}{Stock}} $\ast$}]{st,  }\item[{\mbox{\hyperlink{struct_necessidades}{Necessidades}} $\ast$}]{nec,  }\item[{\mbox{\hyperlink{struct_minimo_enc}{Minimo\+Enc}}}]{min\+Enc }\end{DoxyParamCaption})}
+
+Adiciona uma encomenda à lista de encomendas 
+\begin{DoxyParams}{Parameters}
+{\em lista} & apontador para uma lista de encomendas \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 se encomenda é adicionada com sucesso / 0 se encomenda já existe, não adiciona Se possivel, adiciona encomenda à lista de encomendas 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & apontador para a lista de encomendas \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 se o encomenda foi adicionada com sucesso / 0 não inserida (numero encomenda já existe na lista) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_lista_encomendas_8h_a96cdddbe14fd154ae81a0b291b8e5f03}\label{_lista_encomendas_8h_a96cdddbe14fd154ae81a0b291b8e5f03}} 
+\index{ListaEncomendas.h@{ListaEncomendas.h}!alocarMemoria@{alocarMemoria}}
+\index{alocarMemoria@{alocarMemoria}!ListaEncomendas.h@{ListaEncomendas.h}}
+\doxysubsubsection{\texorpdfstring{alocarMemoria()}{alocarMemoria()}}
+{\footnotesize\ttfamily void alocar\+Memoria (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_encomendas}{Lista\+Encomendas}} $\ast$}]{lista }\end{DoxyParamCaption})}
+
+Alocação de memória incial de acordo com TAMANHO\+\_\+\+MAX 
+\begin{DoxyParams}{Parameters}
+{\em lista} & apontador para a lista de encomendas \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_lista_encomendas_8h_aa079c9e6ef1fda6a19d6bfdc8714a2b5}\label{_lista_encomendas_8h_aa079c9e6ef1fda6a19d6bfdc8714a2b5}} 
+\index{ListaEncomendas.h@{ListaEncomendas.h}!expandirMemoria@{expandirMemoria}}
+\index{expandirMemoria@{expandirMemoria}!ListaEncomendas.h@{ListaEncomendas.h}}
+\doxysubsubsection{\texorpdfstring{expandirMemoria()}{expandirMemoria()}}
+{\footnotesize\ttfamily void expandir\+Memoria (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_encomendas}{Lista\+Encomendas}} $\ast$}]{lista }\end{DoxyParamCaption})}
+
+Realocação da memória, duplicando o tamanho 
+\begin{DoxyParams}{Parameters}
+{\em lista} & apontador para lista de encomendas \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_lista_encomendas_8h_a07aecd50ce77b2148fcab8330969a249}\label{_lista_encomendas_8h_a07aecd50ce77b2148fcab8330969a249}} 
+\index{ListaEncomendas.h@{ListaEncomendas.h}!guardarListaEncomendas@{guardarListaEncomendas}}
+\index{guardarListaEncomendas@{guardarListaEncomendas}!ListaEncomendas.h@{ListaEncomendas.h}}
+\doxysubsubsection{\texorpdfstring{guardarListaEncomendas()}{guardarListaEncomendas()}}
+{\footnotesize\ttfamily void guardar\+Lista\+Encomendas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_encomendas}{Lista\+Encomendas}} $\ast$}]{lista }\end{DoxyParamCaption})}
+
+Guarda todas as encomendas num ficheiro 
+\begin{DoxyParams}{Parameters}
+{\em lista} & apontador para lista de funcionários \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_lista_encomendas_8h_aabfe16094703041e6bb5a43bb242bd8c}\label{_lista_encomendas_8h_aabfe16094703041e6bb5a43bb242bd8c}} 
+\index{ListaEncomendas.h@{ListaEncomendas.h}!guardarNrEncomenda@{guardarNrEncomenda}}
+\index{guardarNrEncomenda@{guardarNrEncomenda}!ListaEncomendas.h@{ListaEncomendas.h}}
+\doxysubsubsection{\texorpdfstring{guardarNrEncomenda()}{guardarNrEncomenda()}}
+{\footnotesize\ttfamily void guardar\+Nr\+Encomenda (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_encomendas}{Lista\+Encomendas}} $\ast$}]{lista,  }\item[{int}]{nr\+Enc }\end{DoxyParamCaption})}
+
+Caso exista, guarda info da encomenda num ficheiro 
+\begin{DoxyParams}{Parameters}
+{\em lista} & apontador para lista de funcionários \\
+\hline
+{\em nr\+Enc} & número de encomenda \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_lista_encomendas_8h_a979a76933d236c0d3de80005eb4f6f3d}\label{_lista_encomendas_8h_a979a76933d236c0d3de80005eb4f6f3d}} 
+\index{ListaEncomendas.h@{ListaEncomendas.h}!libertarMemoriaEncomendas@{libertarMemoriaEncomendas}}
+\index{libertarMemoriaEncomendas@{libertarMemoriaEncomendas}!ListaEncomendas.h@{ListaEncomendas.h}}
+\doxysubsubsection{\texorpdfstring{libertarMemoriaEncomendas()}{libertarMemoriaEncomendas()}}
+{\footnotesize\ttfamily void libertar\+Memoria\+Encomendas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_encomendas}{Lista\+Encomendas}} $\ast$}]{lista }\end{DoxyParamCaption})}
+
+Liberta a memória alocada para a lista de encomendas 
+\begin{DoxyParams}{Parameters}
+{\em lista} & apontador para lista de encomendas \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_lista_encomendas_8h_a08ac56d9c1f69bde23120a6936aad0bf}\label{_lista_encomendas_8h_a08ac56d9c1f69bde23120a6936aad0bf}} 
+\index{ListaEncomendas.h@{ListaEncomendas.h}!listarEncomendas@{listarEncomendas}}
+\index{listarEncomendas@{listarEncomendas}!ListaEncomendas.h@{ListaEncomendas.h}}
+\doxysubsubsection{\texorpdfstring{listarEncomendas()}{listarEncomendas()}}
+{\footnotesize\ttfamily void listar\+Encomendas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_encomendas}{Lista\+Encomendas}} $\ast$}]{lista }\end{DoxyParamCaption})}
+
+Imprime a lista de encomendas 
+\begin{DoxyParams}{Parameters}
+{\em lista} & aponador lista de funcionários Caso a lista esteja vazia imprime \char`\"{}\+Sem encomendas!\char`\"{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_lista_encomendas_8h_a86b47e4c4749091f9b60ffd5351a70b2}\label{_lista_encomendas_8h_a86b47e4c4749091f9b60ffd5351a70b2}} 
+\index{ListaEncomendas.h@{ListaEncomendas.h}!mediaEncomendas@{mediaEncomendas}}
+\index{mediaEncomendas@{mediaEncomendas}!ListaEncomendas.h@{ListaEncomendas.h}}
+\doxysubsubsection{\texorpdfstring{mediaEncomendas()}{mediaEncomendas()}}
+{\footnotesize\ttfamily void media\+Encomendas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_encomendas}{Lista\+Encomendas}} $\ast$}]{lista }\end{DoxyParamCaption})}
+
+Media da quantidade de cada matéria prima por encomenda 
+\begin{DoxyParams}{Parameters}
+{\em lista} & apontador para lista de funcionários \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_lista_encomendas_8h_abc7e71bf5545e3dd471d55888703a2fa}\label{_lista_encomendas_8h_abc7e71bf5545e3dd471d55888703a2fa}} 
+\index{ListaEncomendas.h@{ListaEncomendas.h}!mostraEncomenda@{mostraEncomenda}}
+\index{mostraEncomenda@{mostraEncomenda}!ListaEncomendas.h@{ListaEncomendas.h}}
+\doxysubsubsection{\texorpdfstring{mostraEncomenda()}{mostraEncomenda()}}
+{\footnotesize\ttfamily void mostra\+Encomenda (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_encomendas}{Lista\+Encomendas}} $\ast$}]{lista,  }\item[{int}]{nr\+Enc }\end{DoxyParamCaption})}
+
+Caso exista, mostra info da encomenda 
+\begin{DoxyParams}{Parameters}
+{\em lista} & apontador para lista de funcionários \\
+\hline
+{\em nr\+Enc} & número de encomenda \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_lista_encomendas_8h_af7fe8d875e475c7d4b90d0383842563d}\label{_lista_encomendas_8h_af7fe8d875e475c7d4b90d0383842563d}} 
+\index{ListaEncomendas.h@{ListaEncomendas.h}!obterEncomenda@{obterEncomenda}}
+\index{obterEncomenda@{obterEncomenda}!ListaEncomendas.h@{ListaEncomendas.h}}
+\doxysubsubsection{\texorpdfstring{obterEncomenda()}{obterEncomenda()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_encomenda}{Encomenda}} $\ast$ obter\+Encomenda (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_encomendas}{Lista\+Encomendas}} $\ast$}]{lista,  }\item[{int}]{nr\+Enc }\end{DoxyParamCaption})}
+
+Caso exista, devolve um apontador para uma encomenda 
+\begin{DoxyParams}{Parameters}
+{\em lista} & apontador para lista de funcionários \\
+\hline
+{\em nr\+Enc} & número de encomenda \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+apontador para a encomenda / -\/1 caso não exista 
+\end{DoxyReturn}

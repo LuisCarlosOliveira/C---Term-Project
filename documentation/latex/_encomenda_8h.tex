@@ -1,0 +1,120 @@
+\hypertarget{_encomenda_8h}{}\doxysection{Encomenda.\+h File Reference}
+\label{_encomenda_8h}\index{Encomenda.h@{Encomenda.h}}
+
+
+Ficheiro c com funções para criar \mbox{\hyperlink{struct_encomenda}{Encomenda}} e criar e estar quantidades minimas do Fornecedor.  
+
+
+{\ttfamily \#include \char`\"{}Stock.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Input.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Necessidades.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_encomenda}{Encomenda}}
+\begin{DoxyCompactList}\small\item\em Armazena informações relativas à encomenda de matérias-\/primas. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_minimo_enc}{Minimo\+Enc}}
+\begin{DoxyCompactList}\small\item\em Armazena informações relativas as quantidades minimas do Fornecedorde de matérias-\/primas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_encomenda_8h_abfd91d3fbe9575de57240f1fabb30732}{criar\+Minimo\+Encomenda}} (\mbox{\hyperlink{struct_minimo_enc}{Minimo\+Enc}} $\ast$min\+Enc)
+\item 
+void \mbox{\hyperlink{_encomenda_8h_af9724270be0049cc860d722202ae829a}{editar\+Minimo\+Encomenda}} (\mbox{\hyperlink{struct_minimo_enc}{Minimo\+Enc}} $\ast$min\+Enc)
+\item 
+void \mbox{\hyperlink{_encomenda_8h_acd0befdc57a6abf17822b47bea71ecac}{criar\+Encomenda}} (\mbox{\hyperlink{struct_encomenda}{Encomenda}} $\ast$enc, \mbox{\hyperlink{struct_minimo_enc}{Minimo\+Enc}} min\+Enc, \mbox{\hyperlink{struct_stock}{Stock}} $\ast$st, \mbox{\hyperlink{struct_necessidades}{Necessidades}} $\ast$nec)
+\item 
+void \mbox{\hyperlink{_encomenda_8h_a1fbd419a6dd9ccfd775a61d549da0b44}{imprime\+Encomenda}} (\mbox{\hyperlink{struct_encomenda}{Encomenda}} enc)
+\item 
+void \mbox{\hyperlink{_encomenda_8h_a2ec76cafd3e25ec0e313da9dcdc7046c}{guardar\+Encomenda}} (\mbox{\hyperlink{struct_encomenda}{Encomenda}} $\ast$enc)
+\item 
+void \mbox{\hyperlink{_encomenda_8h_a3e6c181de21463a3e3d615682fed1553}{guardar\+Encomendas}} (\mbox{\hyperlink{struct_encomenda}{Encomenda}} $\ast$enc)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Ficheiro c com funções para criar \mbox{\hyperlink{struct_encomenda}{Encomenda}} e criar e estar quantidades minimas do Fornecedor. 
+
+Bibloteca com a estrutura da encomenda e estrutura das quantidades minimas do Fornecedor.
+
+\begin{DoxyAuthor}{Author}
+\+: Luis Oliveira \href{https://github.com/LuisCarlosOliveira}{\texttt{ https\+://github.\+com/\+Luis\+Carlos\+Oliveira}} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+11 de fevereiro de 2022, 22\+:47 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_encomenda_8h_acd0befdc57a6abf17822b47bea71ecac}\label{_encomenda_8h_acd0befdc57a6abf17822b47bea71ecac}} 
+\index{Encomenda.h@{Encomenda.h}!criarEncomenda@{criarEncomenda}}
+\index{criarEncomenda@{criarEncomenda}!Encomenda.h@{Encomenda.h}}
+\doxysubsubsection{\texorpdfstring{criarEncomenda()}{criarEncomenda()}}
+{\footnotesize\ttfamily void criar\+Encomenda (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_encomenda}{Encomenda}} $\ast$}]{enc,  }\item[{\mbox{\hyperlink{struct_minimo_enc}{Minimo\+Enc}}}]{min\+Enc,  }\item[{\mbox{\hyperlink{struct_stock}{Stock}} $\ast$}]{st,  }\item[{\mbox{\hyperlink{struct_necessidades}{Necessidades}} $\ast$}]{nec }\end{DoxyParamCaption})}
+
+Função que, tendo em conta as necessidades de OP, o stock, e a quantidade minima do Fornedor, cria a encomenda 
+\begin{DoxyParams}{Parameters}
+{\em enc} & apontador para estrutura \mbox{\hyperlink{struct_encomenda}{Encomenda}} que irá armazenar quantidades a armazenar \\
+\hline
+{\em min\+Enc} & parametro que contem as quantidades minimas de encomenda do fornecdor \\
+\hline
+{\em st} & apontador para estrutura \mbox{\hyperlink{struct_stock}{Stock}} que irá actualizar o stock consuante as necessidades e encomenda \\
+\hline
+{\em st} & apontador para a estrutura \mbox{\hyperlink{struct_necessidades}{Necessidades}} para aceder à necessidade da OP \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_encomenda_8h_abfd91d3fbe9575de57240f1fabb30732}\label{_encomenda_8h_abfd91d3fbe9575de57240f1fabb30732}} 
+\index{Encomenda.h@{Encomenda.h}!criarMinimoEncomenda@{criarMinimoEncomenda}}
+\index{criarMinimoEncomenda@{criarMinimoEncomenda}!Encomenda.h@{Encomenda.h}}
+\doxysubsubsection{\texorpdfstring{criarMinimoEncomenda()}{criarMinimoEncomenda()}}
+{\footnotesize\ttfamily void criar\+Minimo\+Encomenda (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_minimo_enc}{Minimo\+Enc}} $\ast$}]{min\+Enc }\end{DoxyParamCaption})}
+
+Função que define as quantidades minimas do enunciado de encomenda do Fornecedor 
+\begin{DoxyParams}{Parameters}
+{\em min\+Enc} & apontador para uma estrutura \mbox{\hyperlink{struct_minimo_enc}{Minimo\+Enc}} que irá armazenar as quantidades minimas \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_encomenda_8h_af9724270be0049cc860d722202ae829a}\label{_encomenda_8h_af9724270be0049cc860d722202ae829a}} 
+\index{Encomenda.h@{Encomenda.h}!editarMinimoEncomenda@{editarMinimoEncomenda}}
+\index{editarMinimoEncomenda@{editarMinimoEncomenda}!Encomenda.h@{Encomenda.h}}
+\doxysubsubsection{\texorpdfstring{editarMinimoEncomenda()}{editarMinimoEncomenda()}}
+{\footnotesize\ttfamily void editar\+Minimo\+Encomenda (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_minimo_enc}{Minimo\+Enc}} $\ast$}]{min\+Enc }\end{DoxyParamCaption})}
+
+Função que altera as quantidades minimas do enunciado de encomenda do Fornecedor 
+\begin{DoxyParams}{Parameters}
+{\em min\+Enc} & apontador para uma estrutura \mbox{\hyperlink{struct_minimo_enc}{Minimo\+Enc}} que irá alterar as quantidades minimas \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_encomenda_8h_a2ec76cafd3e25ec0e313da9dcdc7046c}\label{_encomenda_8h_a2ec76cafd3e25ec0e313da9dcdc7046c}} 
+\index{Encomenda.h@{Encomenda.h}!guardarEncomenda@{guardarEncomenda}}
+\index{guardarEncomenda@{guardarEncomenda}!Encomenda.h@{Encomenda.h}}
+\doxysubsubsection{\texorpdfstring{guardarEncomenda()}{guardarEncomenda()}}
+{\footnotesize\ttfamily void guardar\+Encomenda (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_encomenda}{Encomenda}} $\ast$}]{enc }\end{DoxyParamCaption})}
+
+Gera documento com encomenda 
+\begin{DoxyParams}{Parameters}
+{\em enc} & apontador para a estrutura \mbox{\hyperlink{struct_encomenda}{Encomenda}} que será escrita em ficheiro Encomenda.\+txt \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_encomenda_8h_a3e6c181de21463a3e3d615682fed1553}\label{_encomenda_8h_a3e6c181de21463a3e3d615682fed1553}} 
+\index{Encomenda.h@{Encomenda.h}!guardarEncomendas@{guardarEncomendas}}
+\index{guardarEncomendas@{guardarEncomendas}!Encomenda.h@{Encomenda.h}}
+\doxysubsubsection{\texorpdfstring{guardarEncomendas()}{guardarEncomendas()}}
+{\footnotesize\ttfamily void guardar\+Encomendas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_encomenda}{Encomenda}} $\ast$}]{enc }\end{DoxyParamCaption})}
+
+Gera documento com todas encomenda 
+\begin{DoxyParams}{Parameters}
+{\em enc} & apontador para a estrutura \mbox{\hyperlink{struct_encomenda}{Encomenda}} que será escrita em ficheiro Encomenda.\+txt \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_encomenda_8h_a1fbd419a6dd9ccfd775a61d549da0b44}\label{_encomenda_8h_a1fbd419a6dd9ccfd775a61d549da0b44}} 
+\index{Encomenda.h@{Encomenda.h}!imprimeEncomenda@{imprimeEncomenda}}
+\index{imprimeEncomenda@{imprimeEncomenda}!Encomenda.h@{Encomenda.h}}
+\doxysubsubsection{\texorpdfstring{imprimeEncomenda()}{imprimeEncomenda()}}
+{\footnotesize\ttfamily void imprime\+Encomenda (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_encomenda}{Encomenda}}}]{enc }\end{DoxyParamCaption})}
+
+Imprime na consola as informações da encomenda 
+\begin{DoxyParams}{Parameters}
+{\em enc} & parâmetro que contém todos os dados da encomenda \\
+\hline
+\end{DoxyParams}

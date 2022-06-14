@@ -1,0 +1,38 @@
+\hypertarget{_encomenda_8h_source}{}\doxysection{Encomenda.\+h}
+\mbox{\hyperlink{_encomenda_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#ifndef ENCOMENDA\_H}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define ENCOMENDA\_H}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_stock_8h}{Stock.h}}"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_input_8h}{Input.h}}"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_necessidades_8h}{Necessidades.h}}"{}}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{32 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{33     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_encomenda_a0900aa78e514a40021049d8da6edce49}{codigoEncomenda}}; \textcolor{comment}{//Unico}}
+\DoxyCodeLine{34     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_encomenda_a40d87d0b94b4d2d8b5595be6a5233e99}{encomendaCouro}};}
+\DoxyCodeLine{35     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_encomenda_a308c36594073c96f5ad4e630d1bf03d8}{encomendaTecido}};}
+\DoxyCodeLine{36     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_encomenda_a91ffdfd9251660f671f8c6f8a873d566}{encomendaBorracha}};}
+\DoxyCodeLine{37     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_encomenda_a87c0cf5d8e0e6d37acc6d0fcaf0190da}{encomendaCordoes}};}
+\DoxyCodeLine{38     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_encomenda_ad674d641ebe69939c74f83b12b6e9d33}{encomendaPalmilhas}};}
+\DoxyCodeLine{39 \} \mbox{\hyperlink{struct_encomenda}{Encomenda}};}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 }
+\DoxyCodeLine{55 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{56     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_minimo_enc_a36b49ab51efe3eafbedeac78dfb584fd}{couro}};}
+\DoxyCodeLine{57     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_minimo_enc_a8d1b140c1dd0401d490a51b550e3f88b}{tecido}};}
+\DoxyCodeLine{58     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_minimo_enc_a7919671e5f2dbfcb20e9125ca2598380}{borracha}};}
+\DoxyCodeLine{59     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_minimo_enc_a3e1adf86a688b975c2fd59b2a4f57967}{cordoes}};}
+\DoxyCodeLine{60     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_minimo_enc_aec7437ed3e99fc31bfdf0d62cf3723fa}{palmilhas}};}
+\DoxyCodeLine{61 \} \mbox{\hyperlink{struct_minimo_enc}{MinimoEnc}};}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63 \textcolor{keywordtype}{void} \mbox{\hyperlink{_encomenda_8h_abfd91d3fbe9575de57240f1fabb30732}{criarMinimoEncomenda}}(\mbox{\hyperlink{struct_minimo_enc}{MinimoEnc}} *minEnc);}
+\DoxyCodeLine{64 \textcolor{keywordtype}{void} \mbox{\hyperlink{_encomenda_8h_af9724270be0049cc860d722202ae829a}{editarMinimoEncomenda}}(\mbox{\hyperlink{struct_minimo_enc}{MinimoEnc}} *minEnc);}
+\DoxyCodeLine{65 \textcolor{keywordtype}{void} \mbox{\hyperlink{_encomenda_8h_acd0befdc57a6abf17822b47bea71ecac}{criarEncomenda}}(\mbox{\hyperlink{struct_encomenda}{Encomenda}} *enc, \mbox{\hyperlink{struct_minimo_enc}{MinimoEnc}} minEnc, \mbox{\hyperlink{struct_stock}{Stock}} *st, \mbox{\hyperlink{struct_necessidades}{Necessidades}} *nec);}
+\DoxyCodeLine{66 \textcolor{keywordtype}{void} \mbox{\hyperlink{_encomenda_8h_a1fbd419a6dd9ccfd775a61d549da0b44}{imprimeEncomenda}}(\mbox{\hyperlink{struct_encomenda}{Encomenda}} enc);}
+\DoxyCodeLine{67 \textcolor{keywordtype}{void} \mbox{\hyperlink{_encomenda_8h_a2ec76cafd3e25ec0e313da9dcdc7046c}{guardarEncomenda}}(\mbox{\hyperlink{struct_encomenda}{Encomenda}} *enc);}
+\DoxyCodeLine{68 \textcolor{keywordtype}{void} \mbox{\hyperlink{_encomenda_8h_a3e6c181de21463a3e3d615682fed1553}{guardarEncomendas}}(\mbox{\hyperlink{struct_encomenda}{Encomenda}} *enc);}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* ENCOMENDA\_H */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

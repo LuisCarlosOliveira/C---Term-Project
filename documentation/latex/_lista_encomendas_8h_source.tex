@@ -1,0 +1,29 @@
+\hypertarget{_lista_encomendas_8h_source}{}\doxysection{Lista\+Encomendas.\+h}
+\mbox{\hyperlink{_lista_encomendas_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#ifndef LISTAENCOMENDAS\_H}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#define LISTAENCOMENDAS\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_encomenda_8h}{Encomenda.h}}"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define TAMANHO\_MAX 5}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{25 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{26     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_lista_encomendas_a85b242b9ffe57449ad6fd13fb1406abf}{nrEncomendas}};}
+\DoxyCodeLine{27     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_lista_encomendas_adb7c9de4ce591210f9be807eeac88943}{tamanho}};}
+\DoxyCodeLine{28     \mbox{\hyperlink{struct_encomenda}{Encomenda}} *\mbox{\hyperlink{struct_lista_encomendas_a91296ba744e6197189da663661a06928}{listaEncomendas}};}
+\DoxyCodeLine{29 \} \mbox{\hyperlink{struct_lista_encomendas}{ListaEncomendas}};}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{keywordtype}{void} \mbox{\hyperlink{_lista_encomendas_8h_aa079c9e6ef1fda6a19d6bfdc8714a2b5}{expandirMemoria}}(\mbox{\hyperlink{struct_lista_encomendas}{ListaEncomendas}} *lista);}
+\DoxyCodeLine{32 \textcolor{keywordtype}{void} \mbox{\hyperlink{_lista_encomendas_8h_a979a76933d236c0d3de80005eb4f6f3d}{libertarMemoriaEncomendas}}(\mbox{\hyperlink{struct_lista_encomendas}{ListaEncomendas}} *lista);}
+\DoxyCodeLine{33 \textcolor{keywordtype}{void} \mbox{\hyperlink{_lista_encomendas_8h_a96cdddbe14fd154ae81a0b291b8e5f03}{alocarMemoria}}(\mbox{\hyperlink{struct_lista_encomendas}{ListaEncomendas}} *lista);}
+\DoxyCodeLine{34 \textcolor{keywordtype}{int} \mbox{\hyperlink{_lista_encomendas_8h_ab0bc01865c661dbe3e09065e38cdedfb}{adicionarEncomenda}}(\mbox{\hyperlink{struct_lista_encomendas}{ListaEncomendas}} *lista, \mbox{\hyperlink{struct_stock}{Stock}} *st, \mbox{\hyperlink{struct_necessidades}{Necessidades}} *nec, \mbox{\hyperlink{struct_minimo_enc}{MinimoEnc}} minEnc);}
+\DoxyCodeLine{35 \mbox{\hyperlink{struct_encomenda}{Encomenda}}* \mbox{\hyperlink{_lista_encomendas_8h_af7fe8d875e475c7d4b90d0383842563d}{obterEncomenda}}(\mbox{\hyperlink{struct_lista_encomendas}{ListaEncomendas}} *lista, \textcolor{keywordtype}{int} nrEnc);}
+\DoxyCodeLine{36 \textcolor{keywordtype}{void} \mbox{\hyperlink{_lista_encomendas_8h_abc7e71bf5545e3dd471d55888703a2fa}{mostraEncomenda}}(\mbox{\hyperlink{struct_lista_encomendas}{ListaEncomendas}} *lista, \textcolor{keywordtype}{int} nrEnc);}
+\DoxyCodeLine{37 \textcolor{keywordtype}{void} \mbox{\hyperlink{_lista_encomendas_8h_a08ac56d9c1f69bde23120a6936aad0bf}{listarEncomendas}}(\mbox{\hyperlink{struct_lista_encomendas}{ListaEncomendas}} *lista);}
+\DoxyCodeLine{38 \textcolor{keywordtype}{void} \mbox{\hyperlink{_lista_encomendas_8h_aabfe16094703041e6bb5a43bb242bd8c}{guardarNrEncomenda}}(\mbox{\hyperlink{struct_lista_encomendas}{ListaEncomendas}} *lista, \textcolor{keywordtype}{int} nrEnc) ;}
+\DoxyCodeLine{39 \textcolor{keywordtype}{void} \mbox{\hyperlink{_lista_encomendas_8h_a07aecd50ce77b2148fcab8330969a249}{guardarListaEncomendas}}(\mbox{\hyperlink{struct_lista_encomendas}{ListaEncomendas}} *lista);}
+\DoxyCodeLine{40 \textcolor{keywordtype}{void} \mbox{\hyperlink{_lista_encomendas_8h_a86b47e4c4749091f9b60ffd5351a70b2}{mediaEncomendas}}(\mbox{\hyperlink{struct_lista_encomendas}{ListaEncomendas}} *lista);}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* LISTAENCOMENDAS\_H */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

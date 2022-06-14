@@ -1,0 +1,97 @@
+\hypertarget{_input_8h}{}\doxysection{Input.\+h File Reference}
+\label{_input_8h}\index{Input.h@{Input.h}}
+
+
+Ficheiro c para operações de leitura.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_input_8h_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}{obter\+Int}} (int min\+Valor, int max\+Valor, char $\ast$msg)
+\item 
+float \mbox{\hyperlink{_input_8h_acf0457ff431a6ac3c752715e778b566e}{obter\+Float}} (float min\+Valor, float max\+Valor, char $\ast$msg)
+\item 
+double \mbox{\hyperlink{_input_8h_a21f2b70641e75f55e2bd11550fedd899}{obter\+Double}} (double min\+Valor, double max\+Valor, char $\ast$msg)
+\item 
+char \mbox{\hyperlink{_input_8h_ae15b6840f5e86d21d0d01c31b5d25cc0}{obter\+Char}} (char $\ast$msg)
+\item 
+void \mbox{\hyperlink{_input_8h_a8deaff72b3466f323d5ffe40426e1ea1}{ler\+String}} (char $\ast$string, unsigned int tamanho, char $\ast$msg)
+\item 
+\mbox{\Hypertarget{_input_8h_a41d75ad7a9c57973252648930b5a8a33}\label{_input_8h_a41d75ad7a9c57973252648930b5a8a33}} 
+void {\bfseries imprime\+Linha} ()
+\item 
+int \mbox{\hyperlink{_input_8h_a211bc74fffb2ad7d559ec8083e3ba30e}{nr\+Linhas\+Ficheiro}} (char $\ast$filename)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Ficheiro c para operações de leitura. 
+
+Biblioteca para operações de leitura.
+
+\begin{DoxyAuthor}{Author}
+\+: Luis Oliveira \href{https://github.com/LuisCarlosOliveira}{\texttt{ https\+://github.\+com/\+Luis\+Carlos\+Oliveira}} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+29 de dezembro de 2021, 18\+:45 IMPORTANTE\+: grande parte do código aqui presente foi disponiblidade na UC de FP pelo Prof. Oscar Oliveira 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_input_8h_a8deaff72b3466f323d5ffe40426e1ea1}\label{_input_8h_a8deaff72b3466f323d5ffe40426e1ea1}} 
+\index{Input.h@{Input.h}!lerString@{lerString}}
+\index{lerString@{lerString}!Input.h@{Input.h}}
+\doxysubsubsection{\texorpdfstring{lerString()}{lerString()}}
+{\footnotesize\ttfamily void ler\+String (\begin{DoxyParamCaption}\item[{char $\ast$}]{string,  }\item[{unsigned int}]{tamanho,  }\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+Procedimento para ler da consola uma string \mbox{\Hypertarget{_input_8h_a211bc74fffb2ad7d559ec8083e3ba30e}\label{_input_8h_a211bc74fffb2ad7d559ec8083e3ba30e}} 
+\index{Input.h@{Input.h}!nrLinhasFicheiro@{nrLinhasFicheiro}}
+\index{nrLinhasFicheiro@{nrLinhasFicheiro}!Input.h@{Input.h}}
+\doxysubsubsection{\texorpdfstring{nrLinhasFicheiro()}{nrLinhasFicheiro()}}
+{\footnotesize\ttfamily int nr\+Linhas\+Ficheiro (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+Caso exista, obtêm o número de linhas do ficheiro 
+\begin{DoxyParams}{Parameters}
+{\em filename} & nome do ficheiro \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+o número de linhas do ficheiro 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_input_8h_ae15b6840f5e86d21d0d01c31b5d25cc0}\label{_input_8h_ae15b6840f5e86d21d0d01c31b5d25cc0}} 
+\index{Input.h@{Input.h}!obterChar@{obterChar}}
+\index{obterChar@{obterChar}!Input.h@{Input.h}}
+\doxysubsubsection{\texorpdfstring{obterChar()}{obterChar()}}
+{\footnotesize\ttfamily char obter\+Char (\begin{DoxyParamCaption}\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+Função para obter tipo character \begin{DoxyReturn}{Returns}
+retorna o valor character inserido pelo utilizador ou mensagem de erro 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_input_8h_a21f2b70641e75f55e2bd11550fedd899}\label{_input_8h_a21f2b70641e75f55e2bd11550fedd899}} 
+\index{Input.h@{Input.h}!obterDouble@{obterDouble}}
+\index{obterDouble@{obterDouble}!Input.h@{Input.h}}
+\doxysubsubsection{\texorpdfstring{obterDouble()}{obterDouble()}}
+{\footnotesize\ttfamily double obter\+Double (\begin{DoxyParamCaption}\item[{double}]{min\+Valor,  }\item[{double}]{max\+Valor,  }\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+Função para obter tipo double \begin{DoxyReturn}{Returns}
+retorna o valor double inserido pelo utilizador ou mensagem de erro 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_input_8h_acf0457ff431a6ac3c752715e778b566e}\label{_input_8h_acf0457ff431a6ac3c752715e778b566e}} 
+\index{Input.h@{Input.h}!obterFloat@{obterFloat}}
+\index{obterFloat@{obterFloat}!Input.h@{Input.h}}
+\doxysubsubsection{\texorpdfstring{obterFloat()}{obterFloat()}}
+{\footnotesize\ttfamily float obter\+Float (\begin{DoxyParamCaption}\item[{float}]{min\+Valor,  }\item[{float}]{max\+Valor,  }\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+Função para obter tipo float \begin{DoxyReturn}{Returns}
+retorna o valor float inserido pelo utilizador ou mensagem de erro 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_input_8h_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}\label{_input_8h_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}} 
+\index{Input.h@{Input.h}!obterInt@{obterInt}}
+\index{obterInt@{obterInt}!Input.h@{Input.h}}
+\doxysubsubsection{\texorpdfstring{obterInt()}{obterInt()}}
+{\footnotesize\ttfamily int obter\+Int (\begin{DoxyParamCaption}\item[{int}]{min\+Valor,  }\item[{int}]{max\+Valor,  }\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+Função para obter tipo integer \begin{DoxyReturn}{Returns}
+retorna o valor tipo integer inserido pelo utilizador ou mensagem de erro 
+\end{DoxyReturn}

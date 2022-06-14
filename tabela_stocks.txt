@@ -1,0 +1,6 @@
+Codigo,Produto,StockMinimo,StockAtual
+1,Couro,300,1000
+2,Tecido,250,2000
+3,Borracha,200,500
+4,Cordões,500,2000
+5,Palmilhas,500,1000

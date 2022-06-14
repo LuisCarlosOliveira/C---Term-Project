@@ -1,0 +1,4 @@
+==============  Encomenda nr: 1 : =============
+Codigo | Produto | Quantidade
+1	Couro		445 rolos
+5	Palmilhas	6 sacos
